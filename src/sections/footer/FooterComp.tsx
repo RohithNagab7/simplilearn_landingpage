@@ -1,11 +1,12 @@
 import Image from "next/image";
 import mainLogo from "../../assets/svgs/MainLogo.svg";
 import FooterBgImage from "../../assets/images/footerbgimage.png";
+import RSVPForm from "@/components/form/RsvpForm";
 
 const FooterComp = () => {
   return (
     <section
-      className="px-18 py-10 flexcol justify-between items-start gap-20"
+      className="p-4 md:px-16 lg:px-18 md:py-10 flexcol justify-between items-start gap-10 md:gap-20 "
       style={{
         background: `url(${FooterBgImage.src})`,
         backgroundSize: "cover",
@@ -13,14 +14,14 @@ const FooterComp = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="flexcol gap-4 items-start">
+      <div className="flexcol gap-4 items-start w-full">
         <p className="text-2xl font-extrabold">Space is limited.</p>
-        <p>form</p>
+        <RSVPForm />
       </div>
 
-      <div className="flex items-center justify-between w-full">
-        <Image src={mainLogo} alt="simplilearn" className="w-52" />
-        <p className="text-xl font-medium text-white tracking-wide">
+      <div className="responsiveflex items-start md:items-center md:justify-between w-full">
+        <Image src={mainLogo} alt="simplilearn" className="w-24 md:w-52" />
+        <p className="text-xs md:text-xl font-medium text-white md:tracking-wide">
           © 2009-2025 - Simplilearn Solutions. All Rights Reserved.
         </p>
       </div>

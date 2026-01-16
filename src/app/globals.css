@@ -29,5 +29,9 @@ body {
 }
 
 .mainheadertext {
-  @apply text-3xl md:text-4xl font-bold text-[#F5AB40]
+  @apply text-xl font-extrabold md:text-2xl lg:text-4xl md:font-bold text-[#F5AB40]
+}
+
+.responsiveflex {
+  @apply flex flex-col md:flex-row;
 }

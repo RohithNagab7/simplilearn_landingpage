@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${satoshi.className} antialiased`}>
+    <html lang="en" className={`${satoshi.className} antialiased min-w-full`}>
       <body className="font-sans antialiased">
         {children}
       </body>
