@@ -22,5 +22,12 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flexcol {
+  @apply flex flex-col
+}
+
+.mainheadertext {
+  @apply text-3xl md:text-4xl font-bold text-[#F5AB40]
 }
